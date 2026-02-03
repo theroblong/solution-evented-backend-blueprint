@@ -1,0 +1,4 @@
+sequenceDiagram
+  Postgres->>CDC: change
+  CDC->>Kafka: publish
+  Kafka->>Handler: consume

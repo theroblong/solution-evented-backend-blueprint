@@ -1,0 +1,4 @@
+flowchart LR
+  PG[Postgres] --> CDC[Trigger CDC]
+  CDC --> K[Kafka]
+  K --> H[Handler Runtime]
