@@ -1,3 +1,38 @@
 {
-  "type": "record.changed"
+  "type": "record.changed",
+  "version": "1.0.0",
+  "meta": {
+    "id": "bb0c2a18-5d69-4c55-9fd2-2d6b5b8c6d21",
+    "timestamp": "2026-02-02T12:00:02Z",
+    "source": "postgres-trigger-cdc",
+    "featureId": "FEAT-002",
+    "useCaseId": "UC-001",
+    "correlationId": "corr-002",
+    "stream": "record.customer.changed"
+  },
+  "payload": {
+    "eventId": "bb0c2a18-5d69-4c55-9fd2-2d6b5b8c6d21",
+    "op": "update",
+    "table": "customer",
+    "schemaId": "MODEL-001",
+    "pk": {
+      "customer_id": 123
+    },
+    "changedFields": [
+      "status"
+    ],
+    "delta": {
+      "status": "inactive"
+    },
+    "before": {
+      "customer_id": 123,
+      "name": "Acme",
+      "status": "active"
+    },
+    "after": {
+      "customer_id": 123,
+      "name": "Acme",
+      "status": "inactive"
+    }
+  }
 }

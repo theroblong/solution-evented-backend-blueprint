@@ -1,3 +1,27 @@
 {
-  "type": "record.changed"
+  "type": "record.changed",
+  "version": "1.0.0",
+  "meta": {
+    "id": "7d6b9a4b-0e2a-4e59-9f5a-0b4e9c1d9c11",
+    "timestamp": "2026-02-02T12:00:00Z",
+    "source": "postgres-trigger-cdc",
+    "featureId": "FEAT-002",
+    "useCaseId": "UC-001",
+    "correlationId": "corr-001",
+    "stream": "record.customer.changed"
+  },
+  "payload": {
+    "eventId": "7d6b9a4b-0e2a-4e59-9f5a-0b4e9c1d9c11",
+    "op": "insert",
+    "table": "customer",
+    "schemaId": "MODEL-001",
+    "pk": {
+      "customer_id": 123
+    },
+    "after": {
+      "customer_id": 123,
+      "name": "Acme",
+      "status": "active"
+    }
+  }
 }
